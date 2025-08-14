@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B28F4C442E4C91D000D661AB /* PriamWashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C432E4C91D000D661AB /* PriamWashApp.swift */; };
+		B28F4C462E4C91D000D661AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C452E4C91D000D661AB /* ContentView.swift */; };
+		B28F4C482E4C91D200D661AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28F4C472E4C91D200D661AB /* Assets.xcassets */; };
+		B28F4C4B2E4C91D200D661AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28F4C4A2E4C91D200D661AB /* Preview Assets.xcassets */; };
+		B28F4C552E4C91D200D661AB /* PriamWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C542E4C91D200D661AB /* PriamWashTests.swift */; };
+		B28F4C5F2E4C91D200D661AB /* PriamWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C5E2E4C91D200D661AB /* PriamWashUITests.swift */; };
+		B28F4C612E4C91D200D661AB /* PriamWashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C602E4C91D200D661AB /* PriamWashUITestsLaunchTests.swift */; };
+		B28F4C6E2E4C948200D661AB /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C6D2E4C948200D661AB /* SplashView.swift */; };
+		B28F4C702E4C94EA00D661AB /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C6F2E4C94EA00D661AB /* MainContentView.swift */; };
+		B28F4C722E4CA33200D661AB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C712E4CA33200D661AB /* CardView.swift */; };
+		B28F4C742E4CD17A00D661AB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C732E4CD17900D661AB /* HomeView.swift */; };
+		B28F4C762E4CD1FE00D661AB /* FindLaundryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C752E4CD1FE00D661AB /* FindLaundryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B28F4C512E4C91D200D661AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B28F4C382E4C91D000D661AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B28F4C3F2E4C91D000D661AB;
+			remoteInfo = PriamWash;
+		};
+		B28F4C5B2E4C91D200D661AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B28F4C382E4C91D000D661AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B28F4C3F2E4C91D000D661AB;
+			remoteInfo = PriamWash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B28F4C402E4C91D000D661AB /* PriamWash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriamWash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28F4C432E4C91D000D661AB /* PriamWashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriamWashApp.swift; sourceTree = "<group>"; };
+		B28F4C452E4C91D000D661AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B28F4C472E4C91D200D661AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B28F4C4A2E4C91D200D661AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B28F4C502E4C91D200D661AB /* PriamWashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriamWashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28F4C542E4C91D200D661AB /* PriamWashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriamWashTests.swift; sourceTree = "<group>"; };
+		B28F4C5A2E4C91D200D661AB /* PriamWashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriamWashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28F4C5E2E4C91D200D661AB /* PriamWashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriamWashUITests.swift; sourceTree = "<group>"; };
+		B28F4C602E4C91D200D661AB /* PriamWashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriamWashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B28F4C6D2E4C948200D661AB /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		B28F4C6F2E4C94EA00D661AB /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		B28F4C712E4CA33200D661AB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B28F4C732E4CD17900D661AB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B28F4C752E4CD1FE00D661AB /* FindLaundryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLaundryView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B28F4C3D2E4C91D000D661AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28F4C4D2E4C91D200D661AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28F4C572E4C91D200D661AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B28F4C372E4C91D000D661AB = {
+			isa = PBXGroup;
+			children = (
+				B28F4C422E4C91D000D661AB /* PriamWash */,
+				B28F4C532E4C91D200D661AB /* PriamWashTests */,
+				B28F4C5D2E4C91D200D661AB /* PriamWashUITests */,
+				B28F4C412E4C91D000D661AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B28F4C412E4C91D000D661AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B28F4C402E4C91D000D661AB /* PriamWash.app */,
+				B28F4C502E4C91D200D661AB /* PriamWashTests.xctest */,
+				B28F4C5A2E4C91D200D661AB /* PriamWashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B28F4C422E4C91D000D661AB /* PriamWash */ = {
+			isa = PBXGroup;
+			children = (
+				B28F4C432E4C91D000D661AB /* PriamWashApp.swift */,
+				B28F4C452E4C91D000D661AB /* ContentView.swift */,
+				B28F4C472E4C91D200D661AB /* Assets.xcassets */,
+				B28F4C492E4C91D200D661AB /* Preview Content */,
+				B28F4C6D2E4C948200D661AB /* SplashView.swift */,
+				B28F4C6F2E4C94EA00D661AB /* MainContentView.swift */,
+				B28F4C712E4CA33200D661AB /* CardView.swift */,
+				B28F4C732E4CD17900D661AB /* HomeView.swift */,
+				B28F4C752E4CD1FE00D661AB /* FindLaundryView.swift */,
+			);
+			path = PriamWash;
+			sourceTree = "<group>";
+		};
+		B28F4C492E4C91D200D661AB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B28F4C4A2E4C91D200D661AB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B28F4C532E4C91D200D661AB /* PriamWashTests */ = {
+			isa = PBXGroup;
+			children = (
+				B28F4C542E4C91D200D661AB /* PriamWashTests.swift */,
+			);
+			path = PriamWashTests;
+			sourceTree = "<group>";
+		};
+		B28F4C5D2E4C91D200D661AB /* PriamWashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B28F4C5E2E4C91D200D661AB /* PriamWashUITests.swift */,
+				B28F4C602E4C91D200D661AB /* PriamWashUITestsLaunchTests.swift */,
+			);
+			path = PriamWashUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B28F4C3F2E4C91D000D661AB /* PriamWash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B28F4C642E4C91D200D661AB /* Build configuration list for PBXNativeTarget "PriamWash" */;
+			buildPhases = (
+				B28F4C3C2E4C91D000D661AB /* Sources */,
+				B28F4C3D2E4C91D000D661AB /* Frameworks */,
+				B28F4C3E2E4C91D000D661AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PriamWash;
+			productName = PriamWash;
+			productReference = B28F4C402E4C91D000D661AB /* PriamWash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B28F4C4F2E4C91D200D661AB /* PriamWashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B28F4C672E4C91D200D661AB /* Build configuration list for PBXNativeTarget "PriamWashTests" */;
+			buildPhases = (
+				B28F4C4C2E4C91D200D661AB /* Sources */,
+				B28F4C4D2E4C91D200D661AB /* Frameworks */,
+				B28F4C4E2E4C91D200D661AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B28F4C522E4C91D200D661AB /* PBXTargetDependency */,
+			);
+			name = PriamWashTests;
+			productName = PriamWashTests;
+			productReference = B28F4C502E4C91D200D661AB /* PriamWashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B28F4C592E4C91D200D661AB /* PriamWashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B28F4C6A2E4C91D200D661AB /* Build configuration list for PBXNativeTarget "PriamWashUITests" */;
+			buildPhases = (
+				B28F4C562E4C91D200D661AB /* Sources */,
+				B28F4C572E4C91D200D661AB /* Frameworks */,
+				B28F4C582E4C91D200D661AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B28F4C5C2E4C91D200D661AB /* PBXTargetDependency */,
+			);
+			name = PriamWashUITests;
+			productName = PriamWashUITests;
+			productReference = B28F4C5A2E4C91D200D661AB /* PriamWashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B28F4C382E4C91D000D661AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					B28F4C3F2E4C91D000D661AB = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					B28F4C4F2E4C91D200D661AB = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = B28F4C3F2E4C91D000D661AB;
+					};
+					B28F4C592E4C91D200D661AB = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = B28F4C3F2E4C91D000D661AB;
+					};
+				};
+			};
+			buildConfigurationList = B28F4C3B2E4C91D000D661AB /* Build configuration list for PBXProject "PriamWash" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B28F4C372E4C91D000D661AB;
+			productRefGroup = B28F4C412E4C91D000D661AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B28F4C3F2E4C91D000D661AB /* PriamWash */,
+				B28F4C4F2E4C91D200D661AB /* PriamWashTests */,
+				B28F4C592E4C91D200D661AB /* PriamWashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B28F4C3E2E4C91D000D661AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28F4C4B2E4C91D200D661AB /* Preview Assets.xcassets in Resources */,
+				B28F4C482E4C91D200D661AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28F4C4E2E4C91D200D661AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28F4C582E4C91D200D661AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B28F4C3C2E4C91D000D661AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28F4C462E4C91D000D661AB /* ContentView.swift in Sources */,
+				B28F4C442E4C91D000D661AB /* PriamWashApp.swift in Sources */,
+				B28F4C6E2E4C948200D661AB /* SplashView.swift in Sources */,
+				B28F4C742E4CD17A00D661AB /* HomeView.swift in Sources */,
+				B28F4C762E4CD1FE00D661AB /* FindLaundryView.swift in Sources */,
+				B28F4C702E4C94EA00D661AB /* MainContentView.swift in Sources */,
+				B28F4C722E4CA33200D661AB /* CardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28F4C4C2E4C91D200D661AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28F4C552E4C91D200D661AB /* PriamWashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28F4C562E4C91D200D661AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28F4C5F2E4C91D200D661AB /* PriamWashUITests.swift in Sources */,
+				B28F4C612E4C91D200D661AB /* PriamWashUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B28F4C522E4C91D200D661AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B28F4C3F2E4C91D000D661AB /* PriamWash */;
+			targetProxy = B28F4C512E4C91D200D661AB /* PBXContainerItemProxy */;
+		};
+		B28F4C5C2E4C91D200D661AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B28F4C3F2E4C91D000D661AB /* PriamWash */;
+			targetProxy = B28F4C5B2E4C91D200D661AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B28F4C622E4C91D200D661AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B28F4C632E4C91D200D661AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B28F4C652E4C91D200D661AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PriamWash/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jn.PriamWash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B28F4C662E4C91D200D661AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PriamWash/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jn.PriamWash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B28F4C682E4C91D200D661AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jn.PriamWashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PriamWash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PriamWash";
+			};
+			name = Debug;
+		};
+		B28F4C692E4C91D200D661AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jn.PriamWashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PriamWash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PriamWash";
+			};
+			name = Release;
+		};
+		B28F4C6B2E4C91D200D661AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jn.PriamWashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PriamWash;
+			};
+			name = Debug;
+		};
+		B28F4C6C2E4C91D200D661AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jn.PriamWashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PriamWash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B28F4C3B2E4C91D000D661AB /* Build configuration list for PBXProject "PriamWash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28F4C622E4C91D200D661AB /* Debug */,
+				B28F4C632E4C91D200D661AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B28F4C642E4C91D200D661AB /* Build configuration list for PBXNativeTarget "PriamWash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28F4C652E4C91D200D661AB /* Debug */,
+				B28F4C662E4C91D200D661AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B28F4C672E4C91D200D661AB /* Build configuration list for PBXNativeTarget "PriamWashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28F4C682E4C91D200D661AB /* Debug */,
+				B28F4C692E4C91D200D661AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B28F4C6A2E4C91D200D661AB /* Build configuration list for PBXNativeTarget "PriamWashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28F4C6B2E4C91D200D661AB /* Debug */,
+				B28F4C6C2E4C91D200D661AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B28F4C382E4C91D000D661AB /* Project object */;
+}
