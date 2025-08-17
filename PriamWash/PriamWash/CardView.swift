@@ -11,7 +11,6 @@ struct CardView: View {
     
     var title: String
     var icon: String
-    var color: Color
     
     var body: some View {
         VStack(spacing: 12) {
@@ -35,5 +34,5 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView(title: "Name of Laundry Shop", icon: "tshirt.fill", color: Color.red)
+    CardView(title: "Name of Laundry Shop", icon: "tshirt.fill")
 }
