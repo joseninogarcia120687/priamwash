@@ -22,6 +22,10 @@
 		B28F4C782E4FF59400D661AB /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C772E4FF59400D661AB /* AccountView.swift */; };
 		B28F4C7A2E4FF70700D661AB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C792E4FF70700D661AB /* NotificationView.swift */; };
 		B28F4C7C2E50B45000D661AB /* LaundryAttendantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C7B2E50B45000D661AB /* LaundryAttendantView.swift */; };
+		B28F4C7E2E53467E00D661AB /* SearchFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C7D2E53467E00D661AB /* SearchFieldView.swift */; };
+		B28F4C802E53499C00D661AB /* LaundryShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C7F2E53499C00D661AB /* LaundryShopList.swift */; };
+		B28F4C822E534DD500D661AB /* LaundryShopListContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C812E534DD500D661AB /* LaundryShopListContentView.swift */; };
+		B28F4C852E56045100D661AB /* LaundryShopsModelDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C842E56045100D661AB /* LaundryShopsModelDto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		B28F4C772E4FF59400D661AB /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		B28F4C792E4FF70700D661AB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		B28F4C7B2E50B45000D661AB /* LaundryAttendantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryAttendantView.swift; sourceTree = "<group>"; };
+		B28F4C7D2E53467E00D661AB /* SearchFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldView.swift; sourceTree = "<group>"; };
+		B28F4C7F2E53499C00D661AB /* LaundryShopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryShopList.swift; sourceTree = "<group>"; };
+		B28F4C812E534DD500D661AB /* LaundryShopListContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryShopListContentView.swift; sourceTree = "<group>"; };
+		B28F4C842E56045100D661AB /* LaundryShopsModelDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryShopsModelDto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,7 @@
 		B28F4C422E4C91D000D661AB /* PriamWash */ = {
 			isa = PBXGroup;
 			children = (
+				B28F4C832E56043900D661AB /* Models */,
 				B28F4C432E4C91D000D661AB /* PriamWashApp.swift */,
 				B28F4C452E4C91D000D661AB /* ContentView.swift */,
 				B28F4C472E4C91D200D661AB /* Assets.xcassets */,
@@ -122,6 +131,9 @@
 				B28F4C772E4FF59400D661AB /* AccountView.swift */,
 				B28F4C792E4FF70700D661AB /* NotificationView.swift */,
 				B28F4C7B2E50B45000D661AB /* LaundryAttendantView.swift */,
+				B28F4C7D2E53467E00D661AB /* SearchFieldView.swift */,
+				B28F4C7F2E53499C00D661AB /* LaundryShopList.swift */,
+				B28F4C812E534DD500D661AB /* LaundryShopListContentView.swift */,
 			);
 			path = PriamWash;
 			sourceTree = "<group>";
@@ -149,6 +161,14 @@
 				B28F4C602E4C91D200D661AB /* PriamWashUITestsLaunchTests.swift */,
 			);
 			path = PriamWashUITests;
+			sourceTree = "<group>";
+		};
+		B28F4C832E56043900D661AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B28F4C842E56045100D661AB /* LaundryShopsModelDto.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,15 +302,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B28F4C462E4C91D000D661AB /* ContentView.swift in Sources */,
+				B28F4C802E53499C00D661AB /* LaundryShopList.swift in Sources */,
 				B28F4C442E4C91D000D661AB /* PriamWashApp.swift in Sources */,
 				B28F4C6E2E4C948200D661AB /* SplashView.swift in Sources */,
 				B28F4C742E4CD17A00D661AB /* HomeView.swift in Sources */,
 				B28F4C782E4FF59400D661AB /* AccountView.swift in Sources */,
+				B28F4C822E534DD500D661AB /* LaundryShopListContentView.swift in Sources */,
 				B28F4C762E4CD1FE00D661AB /* FindLaundryView.swift in Sources */,
 				B28F4C7C2E50B45000D661AB /* LaundryAttendantView.swift in Sources */,
+				B28F4C852E56045100D661AB /* LaundryShopsModelDto.swift in Sources */,
 				B28F4C702E4C94EA00D661AB /* MainContentView.swift in Sources */,
 				B28F4C722E4CA33200D661AB /* CardView.swift in Sources */,
 				B28F4C7A2E4FF70700D661AB /* NotificationView.swift in Sources */,
+				B28F4C7E2E53467E00D661AB /* SearchFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

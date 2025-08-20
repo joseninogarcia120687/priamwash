@@ -43,7 +43,7 @@ struct MainContentView: View {
             
             FindLaundryView()
                 .tabItem {
-                    Label("My Orders", systemImage: "cart.fill")
+                    Label("Messages", systemImage: "envelope.fill")
                 }
             
             NotificationView()
