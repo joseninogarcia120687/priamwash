@@ -11,6 +11,7 @@ struct LaundryShopListContentView: View {
     
     @State var imageUrl : String
     @State var shopName : String
+    @State var address : String
     
     var body: some View {
         HStack {
@@ -21,7 +22,7 @@ struct LaundryShopListContentView: View {
                 case .success(let image):
                     image
                         .resizable()
-                        .scaledToFit()
+                        .scaledToFill()
                         .frame(width: 120, height: 90)
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                 case .failure:
@@ -40,13 +41,17 @@ struct LaundryShopListContentView: View {
                     .font(.system(size: 22))
                     .fontWeight(.bold)
                     .foregroundColor(Color.black)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 
-                Text("Block 7 Lot 1 Magnolia Street Camella Homes Noveleta Cavite")
+                Text(address)
+                    .font(.system(size: 13))
+                    .frame(maxWidth: .infinity, alignment: .leading)
             }
+            .frame(maxHeight: 90, alignment: .topLeading)
         }
     }
 }
 
 #Preview {
-    LaundryShopListContentView(imageUrl: "https://media.gettyimages.com/id/1467054171/photo/front-view-of-laundry-building-exterior-with-laundry-machines-dryers-and-hanging-clothes.jpg?s=612x612&w=gi&k=20&c=L5hCbKJa345j-cOissm1X-SJn5V8FmNtxtU1knFCBQM=", shopName: "International Waters")
+    LaundryShopListContentView(imageUrl: "https://media.gettyimages.com/id/1467054171/photo/front-view-of-laundry-building-exterior-with-laundry-machines-dryers-and-hanging-clothes.jpg?s=612x612&w=gi&k=20&c=L5hCbKJa345j-cOissm1X-SJn5V8FmNtxtU1knFCBQM=", shopName: "International Waters", address: "Blk 7 Lot 1 Magnolia Street Camella Homes")
 }

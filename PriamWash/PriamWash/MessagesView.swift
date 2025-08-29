@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct FindLaundryView: View {
+struct MessagesView: View {
     var body: some View {
         Text("Find Laundry View")
     }
 }
 
 #Preview {
-    FindLaundryView()
+    MessagesView()
 }

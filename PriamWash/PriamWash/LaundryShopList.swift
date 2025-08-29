@@ -10,14 +10,15 @@ import SwiftUI
 struct LaundryShopList: View {
     
     let shops = [
-        LaundryShopsModelDto(shopName: "International Washers", coverPhoto: "https://media.gettyimages.com/id/1467054171/photo/front-view-of-laundry-building-exterior-with-laundry-machines-dryers-and-hanging-clothes.jpg?s=612x612&w=gi&k=20&c=L5hCbKJa345j-cOissm1X-SJn5V8FmNtxtU1knFCBQM=")
+        LaundryShopsModelDto(shopName: "International Washers", coverPhoto: "https://media.gettyimages.com/id/1467054171/photo/front-view-of-laundry-building-exterior-with-laundry-machines-dryers-and-hanging-clothes.jpg?s=612x612&w=gi&k=20&c=L5hCbKJa345j-cOissm1X-SJn5V8FmNtxtU1knFCBQM=", address: "Block 7 Lot 1 Magnolia Street Camella Homes"),
+        LaundryShopsModelDto(shopName: "Baby ko Laundry Shop", coverPhoto: "https://s3-media0.fl.yelpcdn.com/bphoto/OVvLE1Y0A9_rLtae0GMHjg/1000s.jpg", address: "Alabang Zapote Road Las Pinas")
     ]
     
     var body: some View {
         ScrollView(.vertical){
-            VStack(spacing: 0) {
+            VStack(spacing: 10) {
                 ForEach(shops) { shop in
-                    LaundryShopListContentView(imageUrl: shop.coverPhoto, shopName: shop.shopName)
+                    LaundryShopListContentView(imageUrl: shop.coverPhoto, shopName: shop.shopName, address: shop.address)
                 }
                 Spacer()
             }

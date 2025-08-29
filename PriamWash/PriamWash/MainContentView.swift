@@ -41,7 +41,7 @@ struct MainContentView: View {
                     Label("Home", systemImage: "house.fill")
                 }
             
-            FindLaundryView()
+            MessagesView()
                 .tabItem {
                     Label("Messages", systemImage: "envelope.fill")
                 }

@@ -18,7 +18,7 @@
 		B28F4C702E4C94EA00D661AB /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C6F2E4C94EA00D661AB /* MainContentView.swift */; };
 		B28F4C722E4CA33200D661AB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C712E4CA33200D661AB /* CardView.swift */; };
 		B28F4C742E4CD17A00D661AB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C732E4CD17900D661AB /* HomeView.swift */; };
-		B28F4C762E4CD1FE00D661AB /* FindLaundryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C752E4CD1FE00D661AB /* FindLaundryView.swift */; };
+		B28F4C762E4CD1FE00D661AB /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C752E4CD1FE00D661AB /* MessagesView.swift */; };
 		B28F4C782E4FF59400D661AB /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C772E4FF59400D661AB /* AccountView.swift */; };
 		B28F4C7A2E4FF70700D661AB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C792E4FF70700D661AB /* NotificationView.swift */; };
 		B28F4C7C2E50B45000D661AB /* LaundryAttendantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C7B2E50B45000D661AB /* LaundryAttendantView.swift */; };
@@ -60,7 +60,7 @@
 		B28F4C6F2E4C94EA00D661AB /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		B28F4C712E4CA33200D661AB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B28F4C732E4CD17900D661AB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		B28F4C752E4CD1FE00D661AB /* FindLaundryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLaundryView.swift; sourceTree = "<group>"; };
+		B28F4C752E4CD1FE00D661AB /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		B28F4C772E4FF59400D661AB /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		B28F4C792E4FF70700D661AB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		B28F4C7B2E50B45000D661AB /* LaundryAttendantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryAttendantView.swift; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 				B28F4C6F2E4C94EA00D661AB /* MainContentView.swift */,
 				B28F4C712E4CA33200D661AB /* CardView.swift */,
 				B28F4C732E4CD17900D661AB /* HomeView.swift */,
-				B28F4C752E4CD1FE00D661AB /* FindLaundryView.swift */,
+				B28F4C752E4CD1FE00D661AB /* MessagesView.swift */,
 				B28F4C772E4FF59400D661AB /* AccountView.swift */,
 				B28F4C792E4FF70700D661AB /* NotificationView.swift */,
 				B28F4C7B2E50B45000D661AB /* LaundryAttendantView.swift */,
@@ -308,7 +308,7 @@
 				B28F4C742E4CD17A00D661AB /* HomeView.swift in Sources */,
 				B28F4C782E4FF59400D661AB /* AccountView.swift in Sources */,
 				B28F4C822E534DD500D661AB /* LaundryShopListContentView.swift in Sources */,
-				B28F4C762E4CD1FE00D661AB /* FindLaundryView.swift in Sources */,
+				B28F4C762E4CD1FE00D661AB /* MessagesView.swift in Sources */,
 				B28F4C7C2E50B45000D661AB /* LaundryAttendantView.swift in Sources */,
 				B28F4C852E56045100D661AB /* LaundryShopsModelDto.swift in Sources */,
 				B28F4C702E4C94EA00D661AB /* MainContentView.swift in Sources */,

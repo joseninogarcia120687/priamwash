@@ -11,4 +11,5 @@ struct LaundryShopsModelDto : Identifiable {
     let id = UUID()
     let shopName: String
     let coverPhoto: String
+    let address: String
 }
