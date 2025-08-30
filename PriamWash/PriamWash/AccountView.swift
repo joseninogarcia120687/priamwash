@@ -29,11 +29,13 @@ struct AccountView: View {
                     
                 } label: {
                     Label("Login/Sign Up", systemImage: "arrow.right.square.fill")
+                        .padding(.vertical, 15).padding(.horizontal, 16)
+                        .frame(maxWidth: 200)
+                        .foregroundStyle(.white)
+                        .background(.blue)
+                        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
                 }
-                .buttonStyle(.borderedProminent)
                 .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
-                .controlSize(.large)
-                
             }
             .padding(EdgeInsets(top: 50, leading: 0, bottom: 30, trailing: 0))
             .frame(maxWidth: .infinity, alignment: .center)
