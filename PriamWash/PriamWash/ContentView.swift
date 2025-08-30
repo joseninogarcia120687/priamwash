@@ -7,14 +7,32 @@
 
 import SwiftUI
 
+final class Router: ObservableObject {
+    enum Route: Hashable {
+        case account
+    }
+    @Published var rootPath = NavigationPath()
+}
+
 struct ContentView: View {
     
+    @StateObject private var router = Router()
     @State private var showSplash = true
+    @EnvironmentObject var session: SessionStore
     
     var body: some View {
         ZStack{
-            MainContentView()
-                .opacity(showSplash ? 0 : 1)
+            NavigationStack(path: $router.rootPath){
+                MainContentView()
+                    .opacity(showSplash ? 0 : 1)
+                    .environmentObject(router)
+                    .navigationDestination(for: Router.Route.self){ route in
+                        switch route {
+                        case .account:
+                            MyAccountView()
+                        }
+                    }
+            }
             
             if showSplash {
                 SplashView()

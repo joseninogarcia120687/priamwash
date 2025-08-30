@@ -17,6 +17,9 @@ struct AccountView: View {
         ("Logout", "rectangle.portrait.and.arrow.forward")
     ]
     
+    @EnvironmentObject var router: Router
+    @EnvironmentObject var session: SessionStore
+    
     var body: some View {
         VStack {
             VStack {
@@ -25,17 +28,21 @@ struct AccountView: View {
                     .frame(width: 70, height: 70)
                     .foregroundColor(.white)
                 
-                Button {
+                if session.userId == nil && session.isLoggedIn == false {
+                    Button {
+                        router.rootPath.append(Router.Route.account)
+                    } label: {
+                        Label("Login/Sign Up", systemImage: "arrow.right.square.fill")
+                            .padding(.vertical, 15).padding(.horizontal, 16)
+                            .frame(maxWidth: 200)
+                            .foregroundStyle(.white)
+                            .background(.blue)
+                            .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                    }
+                    .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
+                }else{
                     
-                } label: {
-                    Label("Login/Sign Up", systemImage: "arrow.right.square.fill")
-                        .padding(.vertical, 15).padding(.horizontal, 16)
-                        .frame(maxWidth: 200)
-                        .foregroundStyle(.white)
-                        .background(.blue)
-                        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
                 }
-                .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
             }
             .padding(EdgeInsets(top: 50, leading: 0, bottom: 30, trailing: 0))
             .frame(maxWidth: .infinity, alignment: .center)
@@ -53,6 +60,10 @@ struct AccountView: View {
             }
             
             Spacer()
+        }
+        .task {
+            print("User ID: ", session.userId)
+            print(session.isLoggedIn)
         }
     }
 }

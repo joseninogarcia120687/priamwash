@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B27542C02E629B6600C39877 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542BF2E629B6600C39877 /* MyAccountView.swift */; };
+		B27542C22E62D0A600C39877 /* AuthMemberRequestDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542C12E62D0A600C39877 /* AuthMemberRequestDto.swift */; };
+		B27542C52E62D18900C39877 /* AuthMemberMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542C42E62D18900C39877 /* AuthMemberMS.swift */; };
+		B27542C82E62D22A00C39877 /* AuthMemberResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542C72E62D22A00C39877 /* AuthMemberResponseDto.swift */; };
+		B27542CA2E62D27900C39877 /* AuthMemberPayloadDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542C92E62D27900C39877 /* AuthMemberPayloadDto.swift */; };
+		B27542CD2E62D2DB00C39877 /* ErrorDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542CC2E62D2DB00C39877 /* ErrorDto.swift */; };
 		B28F4C442E4C91D000D661AB /* PriamWashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C432E4C91D000D661AB /* PriamWashApp.swift */; };
 		B28F4C462E4C91D000D661AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C452E4C91D000D661AB /* ContentView.swift */; };
 		B28F4C482E4C91D200D661AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28F4C472E4C91D200D661AB /* Assets.xcassets */; };
@@ -46,6 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B27542BF2E629B6600C39877 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
+		B27542C12E62D0A600C39877 /* AuthMemberRequestDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMemberRequestDto.swift; sourceTree = "<group>"; };
+		B27542C42E62D18900C39877 /* AuthMemberMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMemberMS.swift; sourceTree = "<group>"; };
+		B27542C72E62D22A00C39877 /* AuthMemberResponseDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMemberResponseDto.swift; sourceTree = "<group>"; };
+		B27542C92E62D27900C39877 /* AuthMemberPayloadDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMemberPayloadDto.swift; sourceTree = "<group>"; };
+		B27542CC2E62D2DB00C39877 /* ErrorDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDto.swift; sourceTree = "<group>"; };
 		B28F4C402E4C91D000D661AB /* PriamWash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriamWash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28F4C432E4C91D000D661AB /* PriamWashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriamWashApp.swift; sourceTree = "<group>"; };
 		B28F4C452E4C91D000D661AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +107,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B27542BE2E629B4D00C39877 /* AccountPages */ = {
+			isa = PBXGroup;
+			children = (
+				B27542BF2E629B6600C39877 /* MyAccountView.swift */,
+			);
+			path = AccountPages;
+			sourceTree = "<group>";
+		};
+		B27542C32E62D16A00C39877 /* Microservice */ = {
+			isa = PBXGroup;
+			children = (
+				B27542C42E62D18900C39877 /* AuthMemberMS.swift */,
+			);
+			path = Microservice;
+			sourceTree = "<group>";
+		};
+		B27542C62E62D21300C39877 /* AuthMember */ = {
+			isa = PBXGroup;
+			children = (
+				B27542C12E62D0A600C39877 /* AuthMemberRequestDto.swift */,
+				B27542C72E62D22A00C39877 /* AuthMemberResponseDto.swift */,
+				B27542C92E62D27900C39877 /* AuthMemberPayloadDto.swift */,
+			);
+			path = AuthMember;
+			sourceTree = "<group>";
+		};
+		B27542CB2E62D2C000C39877 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B27542CC2E62D2DB00C39877 /* ErrorDto.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		B28F4C372E4C91D000D661AB = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +164,8 @@
 		B28F4C422E4C91D000D661AB /* PriamWash */ = {
 			isa = PBXGroup;
 			children = (
+				B27542C32E62D16A00C39877 /* Microservice */,
+				B27542BE2E629B4D00C39877 /* AccountPages */,
 				B28F4C832E56043900D661AB /* Models */,
 				B28F4C432E4C91D000D661AB /* PriamWashApp.swift */,
 				B28F4C452E4C91D000D661AB /* ContentView.swift */,
@@ -166,6 +214,8 @@
 		B28F4C832E56043900D661AB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B27542CB2E62D2C000C39877 /* Common */,
+				B27542C62E62D21300C39877 /* AuthMember */,
 				B28F4C842E56045100D661AB /* LaundryShopsModelDto.swift */,
 			);
 			path = Models;
@@ -307,14 +357,20 @@
 				B28F4C6E2E4C948200D661AB /* SplashView.swift in Sources */,
 				B28F4C742E4CD17A00D661AB /* HomeView.swift in Sources */,
 				B28F4C782E4FF59400D661AB /* AccountView.swift in Sources */,
+				B27542CD2E62D2DB00C39877 /* ErrorDto.swift in Sources */,
 				B28F4C822E534DD500D661AB /* LaundryShopListContentView.swift in Sources */,
+				B27542CA2E62D27900C39877 /* AuthMemberPayloadDto.swift in Sources */,
+				B27542C02E629B6600C39877 /* MyAccountView.swift in Sources */,
 				B28F4C762E4CD1FE00D661AB /* MessagesView.swift in Sources */,
 				B28F4C7C2E50B45000D661AB /* LaundryAttendantView.swift in Sources */,
 				B28F4C852E56045100D661AB /* LaundryShopsModelDto.swift in Sources */,
 				B28F4C702E4C94EA00D661AB /* MainContentView.swift in Sources */,
+				B27542C82E62D22A00C39877 /* AuthMemberResponseDto.swift in Sources */,
 				B28F4C722E4CA33200D661AB /* CardView.swift in Sources */,
 				B28F4C7A2E4FF70700D661AB /* NotificationView.swift in Sources */,
+				B27542C52E62D18900C39877 /* AuthMemberMS.swift in Sources */,
 				B28F4C7E2E53467E00D661AB /* SearchFieldView.swift in Sources */,
+				B27542C22E62D0A600C39877 /* AuthMemberRequestDto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

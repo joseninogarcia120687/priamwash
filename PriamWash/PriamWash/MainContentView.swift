@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainContentView: View {
     
+    @EnvironmentObject var session: SessionStore
+    
     init() {
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
@@ -40,21 +42,25 @@ struct MainContentView: View {
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
                 }
+                .tag(0)
             
             MessagesView()
                 .tabItem {
                     Label("Messages", systemImage: "envelope.fill")
                 }
+                .tag(1)
             
             NotificationView()
                 .tabItem {
                     Label("Notification", systemImage: "bell.fill")
                 }
+                .tag(2)
             
             AccountView()
                 .tabItem {
                     Label("Account", systemImage: "person.fill")
                 }
+                .tag(3)
         }
         .accentColor(.white)
     }
