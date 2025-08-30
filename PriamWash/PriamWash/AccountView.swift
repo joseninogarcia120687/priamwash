@@ -26,48 +26,73 @@ struct AccountView: View {
                 Image(systemName: "person.circle.fill")
                     .resizable()
                     .frame(width: 70, height: 70)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("BottomNavColor"))
                 
-                if session.userId == nil && session.isLoggedIn == false {
+                if session.isLoggedIn == false {
                     Button {
-                        router.rootPath.append(Router.Route.account)
+                        router.rootPath.append(Router.Route.login)
                     } label: {
-                        Label("Login/Sign Up", systemImage: "arrow.right.square.fill")
+                        Text("Login / Sign Up")
                             .padding(.vertical, 15).padding(.horizontal, 16)
                             .frame(maxWidth: 200)
-                            .foregroundStyle(.white)
-                            .background(.blue)
+                            .foregroundStyle(.blue)
                             .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                            .fontWeight(.bold)
+                            .font(.system(size: 20))
+                            .underline()
                     }
-                    .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
-                }else{
-                    
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                 }
             }
-            .padding(EdgeInsets(top: 50, leading: 0, bottom: 30, trailing: 0))
+            .padding(EdgeInsets(top: 50, leading: 0, bottom: 20, trailing: 0))
             .frame(maxWidth: .infinity, alignment: .center)
-            .background(Color("BottomNavColor"))
+            .background(.white)
             
             List(items, id: \.0){ name, img in
-                HStack {
-                    Image(systemName: img)
-                        .resizable()
-                        .foregroundColor(Color("BottomNavColor"))
-                        .frame(width: 30, height: 30)
-                    Text(name)
+                
+                if name == "Logout" {
+                    if session.isLoggedIn == true {
+                        HStack {
+                            Image(systemName: img)
+                                .resizable()
+                                .foregroundColor(Color("BottomNavColor"))
+                                .frame(width: 30, height: 30)
+                            Button {
+                                if name == "Logout" {
+                                    router.rootPath.append(Router.Route.logout)
+                                }
+                            } label: {
+                                Text(name)
+                                    .foregroundColor(.black)
+                            }
+                        }
+                        .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
+                    }
+                } else {
+                    HStack {
+                        Image(systemName: img)
+                            .resizable()
+                            .foregroundColor(Color("BottomNavColor"))
+                            .frame(width: 30, height: 30)
+                        Button { } label: {
+                            Text(name)
+                                .foregroundColor(.black)
+                        }
+                    }
+                    .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
                 }
-                .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
             }
             
             Spacer()
         }
         .task {
-            print("User ID: ", session.userId)
-            print(session.isLoggedIn)
+            
         }
     }
 }
 
 #Preview {
     AccountView()
+        .environmentObject(Router.preview)
+        .environmentObject(SessionStore.preview)
 }

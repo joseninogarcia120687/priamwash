@@ -8,7 +8,8 @@
 import SwiftUI
 
 final class SessionStore: ObservableObject {
-    @Published var isLoggedIn: Bool? = false
+    
+    @Published var isLoggedIn: Bool? = false { didSet { save() } }
     @Published var userId: String? = "" { didSet { save() } }
     
     init() { load() }

@@ -68,4 +68,5 @@ struct MainContentView: View {
 
 #Preview {
     MainContentView()
+        .environmentObject(SessionStore.preview)
 }

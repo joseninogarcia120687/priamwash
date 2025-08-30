@@ -9,9 +9,26 @@ import SwiftUI
 
 final class Router: ObservableObject {
     enum Route: Hashable {
-        case account
+        case login, logout
     }
     @Published var rootPath = NavigationPath()
+}
+
+extension SessionStore {
+    static let preview: SessionStore = {
+        let s = SessionStore()
+        s.isLoggedIn = false
+        s.userId = ""
+        return s
+    }()
+}
+
+extension Router {
+    static let preview: Router = {
+        let r = Router()
+        r.rootPath.append(Router.Route.login)
+        return r
+    }()
 }
 
 struct ContentView: View {
@@ -28,8 +45,10 @@ struct ContentView: View {
                     .environmentObject(router)
                     .navigationDestination(for: Router.Route.self){ route in
                         switch route {
-                        case .account:
-                            MyAccountView()
+                        case .login:
+                            LogInView()
+                        case .logout:
+                            LogoutView()
                         }
                     }
             }
@@ -50,4 +69,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(SessionStore.preview)
 }
