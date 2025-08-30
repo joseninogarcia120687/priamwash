@@ -9,7 +9,13 @@ import SwiftUI
 
 struct AccountView: View {
     
-    @State private var items = ["My Account"]
+    @State private var items = [
+        ("My Account", "person.circle.fill"),
+        ("Settings", "gear.circle.fill"),
+        ("Help", "questionmark.circle.fill"),
+        ("Contact Us", "phone.fill"),
+        ("Logout", "rectangle.portrait.and.arrow.forward")
+    ]
     
     var body: some View {
         VStack {
@@ -17,17 +23,31 @@ struct AccountView: View {
                 Image(systemName: "person.circle.fill")
                     .resizable()
                     .frame(width: 70, height: 70)
+                    .foregroundColor(.white)
+                
+                Button {
+                    
+                } label: {
+                    Label("Login/Sign Up", systemImage: "arrow.right.square.fill")
+                }
+                .buttonStyle(.borderedProminent)
+                .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
+                .controlSize(.large)
                 
             }
-            .padding(EdgeInsets(top: 50, leading: 0, bottom: 50, trailing: 0))
+            .padding(EdgeInsets(top: 50, leading: 0, bottom: 30, trailing: 0))
             .frame(maxWidth: .infinity, alignment: .center)
             .background(Color("BottomNavColor"))
             
-            List(items, id: \.self){name in
+            List(items, id: \.0){ name, img in
                 HStack {
-                    Image(systemName: "circle.fill")
+                    Image(systemName: img)
+                        .resizable()
+                        .foregroundColor(Color("BottomNavColor"))
+                        .frame(width: 30, height: 30)
                     Text(name)
                 }
+                .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
             }
             
             Spacer()

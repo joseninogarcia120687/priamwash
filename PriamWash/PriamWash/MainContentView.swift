@@ -31,7 +31,7 @@ struct MainContentView: View {
 
         // Optional: also set these (some versions still read them)
         UITabBar.appearance().tintColor = .white
-        UITabBar.appearance().unselectedItemTintColor = .systemGray3
+        UITabBar.appearance().unselectedItemTintColor = .systemGray5
     }
     
     var body: some View {
