@@ -15,6 +15,8 @@
 		B27542CD2E62D2DB00C39877 /* ErrorDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542CC2E62D2DB00C39877 /* ErrorDto.swift */; };
 		B27542D12E63430000C39877 /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542D02E63430000C39877 /* LogoutView.swift */; };
 		B27542D42E6348A500C39877 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542D32E6348A500C39877 /* Helper.swift */; };
+		B27542D62E63E57700C39877 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542D52E63E57700C39877 /* CreateAccountView.swift */; };
+		B27542D82E63F20F00C39877 /* AccountMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542D72E63F20F00C39877 /* AccountMainView.swift */; };
 		B28F4C442E4C91D000D661AB /* PriamWashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C432E4C91D000D661AB /* PriamWashApp.swift */; };
 		B28F4C462E4C91D000D661AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C452E4C91D000D661AB /* ContentView.swift */; };
 		B28F4C482E4C91D200D661AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28F4C472E4C91D200D661AB /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		B27542CC2E62D2DB00C39877 /* ErrorDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDto.swift; sourceTree = "<group>"; };
 		B27542D02E63430000C39877 /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
 		B27542D32E6348A500C39877 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		B27542D52E63E57700C39877 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		B27542D72E63F20F00C39877 /* AccountMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountMainView.swift; sourceTree = "<group>"; };
 		B28F4C402E4C91D000D661AB /* PriamWash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriamWash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28F4C432E4C91D000D661AB /* PriamWashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriamWashApp.swift; sourceTree = "<group>"; };
 		B28F4C452E4C91D000D661AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 			children = (
 				B27542BF2E629B6600C39877 /* LogInView.swift */,
 				B27542D02E63430000C39877 /* LogoutView.swift */,
+				B27542D52E63E57700C39877 /* CreateAccountView.swift */,
+				B27542D72E63F20F00C39877 /* AccountMainView.swift */,
 			);
 			path = AccountPages;
 			sourceTree = "<group>";
@@ -370,10 +376,12 @@
 				B28F4C442E4C91D000D661AB /* PriamWashApp.swift in Sources */,
 				B28F4C6E2E4C948200D661AB /* SplashView.swift in Sources */,
 				B28F4C742E4CD17A00D661AB /* HomeView.swift in Sources */,
+				B27542D82E63F20F00C39877 /* AccountMainView.swift in Sources */,
 				B28F4C782E4FF59400D661AB /* AccountView.swift in Sources */,
 				B27542CD2E62D2DB00C39877 /* ErrorDto.swift in Sources */,
 				B28F4C822E534DD500D661AB /* LaundryShopListContentView.swift in Sources */,
 				B27542CA2E62D27900C39877 /* AuthMemberPayloadDto.swift in Sources */,
+				B27542D62E63E57700C39877 /* CreateAccountView.swift in Sources */,
 				B27542C02E629B6600C39877 /* LogInView.swift in Sources */,
 				B28F4C762E4CD1FE00D661AB /* MessagesView.swift in Sources */,
 				B27542D42E6348A500C39877 /* Helper.swift in Sources */,

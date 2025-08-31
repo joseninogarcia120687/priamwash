@@ -10,6 +10,6 @@ import Foundation
 struct AuthMemberResponseDto : Decodable {
     let sucess: Bool
     let returnCode: String
-    let payload: AuthMemberPayloadDto
-    let errors: [ErrorDto]
+    let payload: AuthMemberPayloadDto?
+    let errors: [ErrorDto]?
 }

@@ -30,7 +30,7 @@ struct AccountView: View {
                 
                 if session.isLoggedIn == false {
                     Button {
-                        router.rootPath.append(Router.Route.login)
+                        router.rootPath.append(Router.Route.accountmainview)
                     } label: {
                         Text("Login / Sign Up")
                             .padding(.vertical, 15).padding(.horizontal, 16)
