@@ -17,6 +17,10 @@
 		B27542D42E6348A500C39877 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542D32E6348A500C39877 /* Helper.swift */; };
 		B27542D62E63E57700C39877 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542D52E63E57700C39877 /* CreateAccountView.swift */; };
 		B27542D82E63F20F00C39877 /* AccountMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542D72E63F20F00C39877 /* AccountMainView.swift */; };
+		B27542DA2E643BFD00C39877 /* CreateMemberMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542D92E643BFD00C39877 /* CreateMemberMS.swift */; };
+		B27542DD2E643C5C00C39877 /* CreateMemberRequestDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542DC2E643C5C00C39877 /* CreateMemberRequestDto.swift */; };
+		B27542DF2E643CB600C39877 /* CreateMemberResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542DE2E643CB600C39877 /* CreateMemberResponseDto.swift */; };
+		B27542E12E643D1900C39877 /* CreateMemberPayloadDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27542E02E643D1900C39877 /* CreateMemberPayloadDto.swift */; };
 		B28F4C442E4C91D000D661AB /* PriamWashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C432E4C91D000D661AB /* PriamWashApp.swift */; };
 		B28F4C462E4C91D000D661AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F4C452E4C91D000D661AB /* ContentView.swift */; };
 		B28F4C482E4C91D200D661AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28F4C472E4C91D200D661AB /* Assets.xcassets */; };
@@ -66,6 +70,10 @@
 		B27542D32E6348A500C39877 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		B27542D52E63E57700C39877 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		B27542D72E63F20F00C39877 /* AccountMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountMainView.swift; sourceTree = "<group>"; };
+		B27542D92E643BFD00C39877 /* CreateMemberMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemberMS.swift; sourceTree = "<group>"; };
+		B27542DC2E643C5C00C39877 /* CreateMemberRequestDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemberRequestDto.swift; sourceTree = "<group>"; };
+		B27542DE2E643CB600C39877 /* CreateMemberResponseDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemberResponseDto.swift; sourceTree = "<group>"; };
+		B27542E02E643D1900C39877 /* CreateMemberPayloadDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemberPayloadDto.swift; sourceTree = "<group>"; };
 		B28F4C402E4C91D000D661AB /* PriamWash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriamWash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28F4C432E4C91D000D661AB /* PriamWashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriamWashApp.swift; sourceTree = "<group>"; };
 		B28F4C452E4C91D000D661AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				B27542C42E62D18900C39877 /* AuthMemberMS.swift */,
+				B27542D92E643BFD00C39877 /* CreateMemberMS.swift */,
 			);
 			path = Microservice;
 			sourceTree = "<group>";
@@ -158,6 +167,16 @@
 				B27542D32E6348A500C39877 /* Helper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		B27542DB2E643C3F00C39877 /* CreateMember */ = {
+			isa = PBXGroup;
+			children = (
+				B27542DC2E643C5C00C39877 /* CreateMemberRequestDto.swift */,
+				B27542DE2E643CB600C39877 /* CreateMemberResponseDto.swift */,
+				B27542E02E643D1900C39877 /* CreateMemberPayloadDto.swift */,
+			);
+			path = CreateMember;
 			sourceTree = "<group>";
 		};
 		B28F4C372E4C91D000D661AB = {
@@ -234,6 +253,7 @@
 		B28F4C832E56043900D661AB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B27542DB2E643C3F00C39877 /* CreateMember */,
 				B27542CB2E62D2C000C39877 /* Common */,
 				B27542C62E62D21300C39877 /* AuthMember */,
 				B28F4C842E56045100D661AB /* LaundryShopsModelDto.swift */,
@@ -382,6 +402,7 @@
 				B28F4C822E534DD500D661AB /* LaundryShopListContentView.swift in Sources */,
 				B27542CA2E62D27900C39877 /* AuthMemberPayloadDto.swift in Sources */,
 				B27542D62E63E57700C39877 /* CreateAccountView.swift in Sources */,
+				B27542DA2E643BFD00C39877 /* CreateMemberMS.swift in Sources */,
 				B27542C02E629B6600C39877 /* LogInView.swift in Sources */,
 				B28F4C762E4CD1FE00D661AB /* MessagesView.swift in Sources */,
 				B27542D42E6348A500C39877 /* Helper.swift in Sources */,
@@ -391,9 +412,12 @@
 				B27542C82E62D22A00C39877 /* AuthMemberResponseDto.swift in Sources */,
 				B28F4C722E4CA33200D661AB /* CardView.swift in Sources */,
 				B28F4C7A2E4FF70700D661AB /* NotificationView.swift in Sources */,
+				B27542DD2E643C5C00C39877 /* CreateMemberRequestDto.swift in Sources */,
 				B27542C52E62D18900C39877 /* AuthMemberMS.swift in Sources */,
 				B28F4C7E2E53467E00D661AB /* SearchFieldView.swift in Sources */,
+				B27542E12E643D1900C39877 /* CreateMemberPayloadDto.swift in Sources */,
 				B27542D12E63430000C39877 /* LogoutView.swift in Sources */,
+				B27542DF2E643CB600C39877 /* CreateMemberResponseDto.swift in Sources */,
 				B27542C22E62D0A600C39877 /* AuthMemberRequestDto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
